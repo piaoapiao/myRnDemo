@@ -5,8 +5,7 @@ export default class App extends React.Component {
 
 // http://www.cnblogs.com/bennman/p/5301320.html
   constructor(props)
-  {
-    
+  {    
     super(props);
     console.log("constructor")
 
@@ -25,15 +24,18 @@ export default class App extends React.Component {
     }
 
  click() {
-   //Alert.alert('You tapped the button!' )
-   var name = this.state.userName;
+   console.log("click1");
+   console.log("click1");
+   Alert.alert('You tapped the button!' )
+
+  //  var name = this.state.userName;
     // Alert.alert('You tapped the button!' + this.state.userName)
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <Text style={{ backgroundColor:"red"}}>>123</Text>
+        <Text style={{ backgroundColor:"red"}}>1234354354</Text>
 
         <Text > Open up App.123js to start working on your app!</Text>
         <View  style ={{ flexDirection: 'row-reverse',justifyContent:"flex-start"}} >
@@ -53,7 +55,7 @@ export default class App extends React.Component {
         />        
         
          <Button
-            title = "登录11"
+            title = "登录1201"
             color = "red"                        
             style={{backgroundColor: "#ffde00",}} 
             textStyle={{fontSize: 18}}           

@@ -14,8 +14,6 @@ export default class App extends React.Component {
       userName:"gogo",
     }
   }
-  
-
 
     componentDidMount() {
       console.log("componentDidMount")
@@ -24,8 +22,8 @@ export default class App extends React.Component {
     }
 
  click() {
-   console.log("click1");
-   console.log("click1");
+   console.log("click14");
+   console.log("click111");
    Alert.alert('You tapped the button!' )
 
   //  var name = this.state.userName;
@@ -47,7 +45,7 @@ export default class App extends React.Component {
         </View>   
 
         <Button
-            title = "登录10"
+            title = "登录1012234"
             color = "red"                        
             style={{backgroundColor: "#ffde00",}} 
             textStyle={{fontSize: 18}}           
@@ -77,6 +75,15 @@ export default class App extends React.Component {
           overrides={{backgroundColor: 'red'}}
           onPress = {this.click}
         />
+
+        <View  style={{backgroundColor: "green", alignSelf:"flex-end" ,marginRight:10 }}>
+              <Button
+                  title = "登1123123"
+                  color = "red"
+                  style={{backgroundColor: "#ffde00",fontSize:50}}
+                  onPress = {this.click}
+              />
+        </View>
 
       </View> 
 

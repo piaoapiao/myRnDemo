@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View,Button,Alert,TouchableHighlight,TextInput ,NavigatorIOS} from 'react-native';
 
-import FirstCtrl from './LoginController'
+import LoginController from './LoginController'
 
 export default class App extends React.Component {
 
@@ -36,8 +36,9 @@ export default class App extends React.Component {
     return (
      < NavigatorIOS
         initialRoute={{
-          component: FirstCtrl,
+          component: LoginController,
           title: 'My Initial Scene',
+          passProps: { myProp: 'foo' },
         }}
         style={{flex: 1}}
       />

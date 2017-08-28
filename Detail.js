@@ -1,18 +1,17 @@
-import React , { Component, PropTypes } from 'react';
+
+import React from 'react';
 import { StyleSheet, Text, View,Button,Alert,TouchableHighlight,TextInput,NavigatorIOS } from 'react-native';
 
-import Detail from './Detail'
 
 
 
-export default class LoginController extends React.Component {
+
+export default class DetailCtrl extends React.Component {
 
   constructor(props)
   {    
     super(props);
     console.log("constructor")
-
-    // this.onPress = this.onPress.bind(this);
 
     this.state = {
       isLogined:false,
@@ -25,20 +24,6 @@ export default class LoginController extends React.Component {
   	Alert.alert("click")
   }
 
-  onPress()
-  {
-	// Alert.alert("HighLight")
-
-    const nextRoute = {
-      component: Detail,
-      title: 'Bar That',
-      passProps: { myProp: 'bar' }
-    };
-    console.log(this.props);
-     this.props.navigator.push(nextRoute)
-	
-  }
-
   render() {
 
     return (
@@ -46,15 +31,10 @@ export default class LoginController extends React.Component {
       	<Text style={{marginTop:100,marginLeft:40}}>
       	123	
       	</Text>
-
-      	<Button  title = "登录"
+      	
+      	<Button  title = "detail"
 			onPress={this.click}
       	/>
-
-      	 <TouchableHighlight onPress={this.onPress.bind(this)}>
-          <Text>Tap me to load the next scene</Text>
-        </TouchableHighlight>
-
       </View>
     )
   }

@@ -25,7 +25,8 @@ export default class LoginController extends React.Component {
   	Alert.alert("click")
   }
 
-  onPress()
+  
+  click2()
   {
 	// Alert.alert("HighLight")
 
@@ -39,6 +40,10 @@ export default class LoginController extends React.Component {
 	
   }
 
+  //      //	 <TouchableHighlight onPress={this.onPress.bind(this)}>
+
+  //<TouchableHighlight onPress={this.click2.bind(this)}>
+
   render() {
 
     return (
@@ -51,7 +56,9 @@ export default class LoginController extends React.Component {
 			onPress={this.click}
       	/>
 
-      	 <TouchableHighlight onPress={this.onPress.bind(this)}>
+      	 
+      	 <TouchableHighlight onPress={this.click2.bind(this)}>
+      	 
           <Text>Tap me to load the next scene</Text>
         </TouchableHighlight>
 

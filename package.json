@@ -14,6 +14,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "postinstall": "rndebugger-open",
+    "bundle-ios": "react-native bundle --entry-file index.ios.js --bundle-output ./iosbundle/main.jsbundle --platform ios --dev false",
     "test": "node node_modules/jest/bin/jest.js --watch"
   },
   "jest": {

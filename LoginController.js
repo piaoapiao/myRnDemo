@@ -47,7 +47,7 @@ export default class LoginController extends React.Component {
   render() {
 
     return (
-      <View styles={styles.container}>
+      <View style={styles.container}>
       	<Text style={{marginTop:100,marginLeft:40}}>
       	123	
       	</Text>

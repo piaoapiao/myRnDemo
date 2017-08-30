@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { StyleSheet, Text, View,Button,Alert,TouchableHighlight,TextInput,NavigatorIOS } from 'react-native';
-
+import { NativeModules } from 'react-native';
 
 
 
@@ -21,7 +21,10 @@ export default class DetailCtrl extends React.Component {
 
   click()
   {
-  	Alert.alert("click")
+  	 //Alert.alert("click")
+     var RnNativeModule = NativeModules.RnNativeModule;
+
+     RnNativeModule.show("haha");
   }
 
   render() {

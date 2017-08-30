@@ -32,7 +32,7 @@ export default class LoginController extends React.Component {
 
     const nextRoute = {
       component: Detail,
-      title: 'Bar That',
+      title: 'Detail',
       passProps: { myProp: 'bar' }
     };
     console.log(this.props);

@@ -29,10 +29,10 @@ export default class DetailCtrl extends React.Component {
     return (
       <View style={styles.container}>
       	<Text style={{marginTop:100,marginLeft:40}}>
-      	123	
+      	12398903444	
       	</Text>
       	
-      	<Button  title = "detail"
+      	<Button  title = "deta33344il"
 			onPress={this.click}
       	/>
       </View>

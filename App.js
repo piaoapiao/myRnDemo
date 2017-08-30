@@ -3,6 +3,8 @@ import { StyleSheet, Text, View,Button,Alert,TouchableHighlight,TextInput ,Navig
 
 import LoginController from './LoginController'
 
+import codePush from 'react-native-code-push'
+
 export default class App extends React.Component {
 
 // http://www.cnblogs.com/bennman/p/5301320.html
@@ -18,6 +20,8 @@ export default class App extends React.Component {
   }
 
     componentDidMount() {
+
+      codePush.sync()
       console.log("componentDidMount")
         this.setState({ data: 'Hello' });
         this.setState({ userName: 'Hello' });
@@ -37,7 +41,7 @@ export default class App extends React.Component {
      < NavigatorIOS
         initialRoute={{
           component: LoginController,
-          title: 'My Initial Scene',
+          title: 'M1y Initial Scene2',
           passProps: { myProp: 'foo' },
         }}
         style={{flex: 1}}
